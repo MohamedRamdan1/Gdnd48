@@ -37,53 +37,60 @@
 }
 
 .cir {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 90px ;
+    height: 60px;
+    width: 60px;
+    background-image: url(../imgs/Untitled.png);
+    background-size: 120px;
+    border-radius: 90px;
+    background-position-x: 71px;
+    background-position-y: 73px;
     position: absolute;
     top: 20px;
     left: 30px;
+    border: 0px #ef9273 solid;
 }
-.upp {
+/* .upp {
     height: 40px;
     width: 40px;
-    background-image: url(../CSSMA/pngfind.com-default-image-png-6764065w.png) ;
+    background-image: url(../imgs/user\ p.p..png) ;
     background-size: 40px ;
     position: absolute;
     top: 35px;
     left: 35px;
-}
+} */
 
 body {
     /* background-image: linear-gradient(to left, #703bbb 0%, #91eaff 100%); */
-    background-color: #F2F2F2;
+    background-color: #fef9f8;
 }
 
 
 .square {
     height: 50px;
-    width: 1150px;
-    background-color: #41ABCE;
-    border-radius: 0 0 45px 0;
+    width: 780px;
+    background-color: #fef9f8;
+    border-radius: 0 0 90px 0;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 260px;
+    border-bottom: 3px #ef9273 solid;
+    /* border-right: 3px #ef9273 solid; */
 }
 
 .aside {
     height: 900px;
     width: 200px;
-    background-color: #41ABCE;
-    position: fixed;
+    background-color: #fef9f8;
+    position: absolute;
     left: 0px;
-    top: 0px;
+    top: 117px;
+    border-right: 3px #ef9273 solid;
 }
 
 .wel {
-    font-family: 'Noto Sans', sans-serif;
-    color: #41ABCE;
-    font-size: 150px;
+    font-family: 'Roboto Condensed', sans-serif;;
+    color: #0d0d0d;
+    font-size: 170px;
     cursor: default;
     position: absolute;
     top: -70px;
@@ -92,19 +99,20 @@ body {
 
 .ur {
     font-size: 40px;
-    color: #41ABCE;
+    color: #0d0d0d;
     font-family: 'Noto Sans', sans-serif;
+    line-height: 125%;
     position: absolute;
-    top: 230px;
+    top: 260px;
     left: 480px;
 }
 
 
 .pic {
-    background-image: url(../CSSMA/jing.png);
-    height: 449px;
+    background-image: url(../imgs/jingyy.png);
+    height: 400px;
     width: 552px;
-    background-size: 553px;
+    background-size: 600px;
     position: absolute;
     top: 408px;
     left: 400px;
@@ -178,19 +186,26 @@ body {
 .aside2 ,
 .aside3 ,
 .aside4 ,
-.aside5,
-.enter {
-    color: rgb(255, 255, 255);
+.aside5 {
+    color: #0d0d0d;
     font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
     margin: 0px;
     padding: 0px;
 }
+.enter {
+    color: #fef9f8;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+
+}
 
 .logo {
     height: 45px;
     width: 45px;
-    background-image: url(../CSSMA/Untitled-1a2-01.png);
+    background-image: url(../imgs/Logoy-01.png);
     background-size: 45px;
     position: absolute;
     top: 05px;
@@ -199,22 +214,32 @@ body {
 
 
 .minis {
-    height: 60px;
-    width: 60px;
-    background-color: #41ABCE;
+    height: 70px;
+    width: 160px;
+    background-color: #fef9f8;
     position: absolute;
-    top: 50px;
-    left: 200px;
+    top: 114px;
+    left: 203px;
+}
+
+.minis2 {
+    height: 70px;
+    width: 130px;
+    background-color: #fef9f8;
+    position: absolute;
+    top: 53px;
+    left: 267px;
 }
 
 .minic {
     height: 120px;
     width: 120px;
-    background-color: #F2F2F2;
+    background-color: #fef9f8;
     position: absolute;
     top: 50px;
     left: 200px;
     border-radius: 100px;
+    border: 3px #ef9273 solid;
 }
 
 .enter {
@@ -222,7 +247,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 50px;
-    background-color: #41ABCE;
+    background-color: #ef9273;
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
 }
@@ -267,4 +292,7 @@ body {
     position: relative;
     top: 215px;
     left: 5px;
+}
+a:hover {
+    color: #ef9273;
 }
