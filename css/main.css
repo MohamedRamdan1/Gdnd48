@@ -44,9 +44,9 @@
     border-radius: 90px;
     background-position-x: 71px;
     background-position-y: 73px;
-    position: absolute;
+    position: fixed;
     top: 20px;
-    left: 30px;
+    left: 20px;
     border: 0px #ef9273 solid;
 }
 /* .upp {
@@ -70,21 +70,50 @@ body {
     width: 780px;
     background-color: #fef9f8;
     border-radius: 0 0 90px 0;
-    position: absolute;
-    top: 0px;
-    left: 260px;
-    border-bottom: 3px #ef9273 solid;
+    position: fixed;
+    top: -10px;
+    left: 220px;
+    border-bottom: 2px #ef9273 solid;
+    z-index: 10;
     /* border-right: 3px #ef9273 solid; */
 }
 
 .aside {
     height: 900px;
-    width: 200px;
+    width: 160px;
     background-color: #fef9f8;
-    position: absolute;
+    position: fixed;
     left: 0px;
-    top: 117px;
-    border-right: 3px #ef9273 solid;
+    top: 107px;
+    border-right: 2px #ef9273 solid;
+}
+.minis {
+    height: 70px;
+    width: 160px;
+    background-color: #fef9f8;
+    position: fixed;
+    top: 104px;
+    left: 162px;
+}
+
+.minis2 {
+    height: 70px;
+    width: 130px;
+    background-color: #fef9f8;
+    position: fixed;
+    top: 42px;
+    left: 223px;
+}
+
+.minic {
+    height: 120px;
+    width: 120px;
+    background-color: #fef9f8;
+    position: fixed;
+    top: 40px;
+    left: 160px;
+    border-radius: 100px;
+    border: 2px #ef9273 solid;
 }
 
 .wel {
@@ -119,8 +148,8 @@ body {
 }
 
 .topm {
-    position: absolute;
-    top: 12px;
+    position: fixed;
+    top: 7px;
     left: 390px;
     display: flex;
     flex-direction: row;
@@ -128,6 +157,7 @@ body {
     justify-content: center;
     align-content: center;
     gap: 50px;
+    z-index: 11;
 }
 
 .topm5 ,
@@ -137,9 +167,9 @@ body {
 }
 
 .aside10 {
-    position: absolute;
-    top: 120px;
-    left: 30px;
+    position: fixed;
+    top: 130px;
+    left: 20px;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
@@ -189,17 +219,61 @@ body {
 .aside5 {
     color: #0d0d0d;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0px;
     padding: 0px;
 }
-.enter {
+.upload {
     color: #fef9f8;
     font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
     margin: 0px;
     padding: 0px;
+}
+.upload {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ef9273;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
 
+.enter1 {
+    height: 100px;
+    width: 370px;
+    position: relative;
+    top: 860px;
+    left: 540px;
+    border-radius: 0px;
+    padding:0px;
+    z-index: 100;
+}
+.enter {
+    color: #0d0d0d;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 120px;
+    letter-spacing: -10px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: -58px;
+    left: 20px;
+    z-index: 101;
+}
+.tri {
+    height: 0px;
+    width: 10px;
+    position: absolute;
+    border-top: 40px transparent solid;
+    border-right: 40px transparent solid;
+    border-bottom: 40px transparent solid;
+    border-left: 50px #0d0d0d solid;
+    top: -5px;
+    left: 287px;
+    size: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .logo {
@@ -209,48 +283,11 @@ body {
     background-size: 45px;
     position: absolute;
     top: 05px;
-    left: 1240px;
+    left: 1280px;
 }
 
 
-.minis {
-    height: 70px;
-    width: 160px;
-    background-color: #fef9f8;
-    position: absolute;
-    top: 114px;
-    left: 203px;
-}
 
-.minis2 {
-    height: 70px;
-    width: 130px;
-    background-color: #fef9f8;
-    position: absolute;
-    top: 53px;
-    left: 267px;
-}
-
-.minic {
-    height: 120px;
-    width: 120px;
-    background-color: #fef9f8;
-    position: absolute;
-    top: 50px;
-    left: 200px;
-    border-radius: 100px;
-    border: 3px #ef9273 solid;
-}
-
-.enter {
-    font-size: 20px;
-    position: fixed;
-    bottom: 20px;
-    right: 50px;
-    background-color: #ef9273;
-    border-radius: 20px;
-    padding: 10px 10px 10px 10px;
-}
 .pr1 ,
 .pr2 ,
 .pr3 ,
@@ -293,6 +330,18 @@ body {
     top: 215px;
     left: 5px;
 }
-a:hover {
+a:hover ,
+.enter:hover,
+.tri:hover {
     color: #ef9273;
 }
+
+/* .line {
+    position: absolute;
+    top: 50px;
+    height: 1px;
+    background-image: linear-gradient(
+    90deg,rgba(0,0,0,0.00) 0%,#000000 50%,rgba(0,0,0,0.00) 100%);
+    opacity: .1;
+    width: 100%;
+} */
