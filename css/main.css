@@ -12,7 +12,7 @@
 .shares {
     height: 300px;
     width: 500px;
-    background-color: #F2F2F2;
+    background-color: #ffffff;
     border-radius: 50px;
     position: relative;
     top: 200px;
@@ -39,11 +39,11 @@
 .cir {
     height: 60px;
     width: 60px;
-    background-image: url(../imgs/Untitled.png);
-    background-size: 120px;
+    background-image: url(../imgs/Untitled2.jpg);
+    background-size: 152px;
     border-radius: 90px;
-    background-position-x: 71px;
-    background-position-y: 73px;
+    background-position-x: 105px;
+    background-position-y: 101px;
     position: fixed;
     top: 20px;
     left: 20px;
@@ -222,6 +222,8 @@ body {
     font-size: 18px;
     margin: 0px;
     padding: 0px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 .upload {
     color: #fef9f8;
@@ -250,16 +252,17 @@ body {
     z-index: 100;
 }
 .enter {
-    color: #0d0d0d;
+    color: #fef9f8;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 120px;
+    font-size: 112px;
     letter-spacing: -10px;
     margin: 0px;
     padding: 0px;
     position: absolute;
-    top: -58px;
-    left: 20px;
-    z-index: 101;
+    top: -40px;
+    left: 65px;
+    /* z-index: 101; */
+    transition: width 2s;
 }
 .tri {
     height: 0px;
@@ -268,9 +271,9 @@ body {
     border-top: 40px transparent solid;
     border-right: 40px transparent solid;
     border-bottom: 40px transparent solid;
-    border-left: 50px #0d0d0d solid;
-    top: -5px;
-    left: 287px;
+    border-left: 50px #fef9f8 solid;
+    top: 0px;
+    left: 16px;
     size: 0px;
     padding: 0px;
     margin: 0px;
@@ -330,11 +333,9 @@ body {
     top: 215px;
     left: 5px;
 }
-a:hover ,
-.enter:hover,
-.tri:hover {
+/* a:hover {
     color: #ef9273;
-}
+} */
 
 /* .line {
     position: absolute;
@@ -344,4 +345,242 @@ a:hover ,
     90deg,rgba(0,0,0,0.00) 0%,#000000 50%,rgba(0,0,0,0.00) 100%);
     opacity: .1;
     width: 100%;
+} */
+.san {
+    width: 76px;
+    height: 80px;
+    background: #0d0d0d;
+    transition: width 1s;
+    position: absolute;
+    top: 830px;
+    left: 560px;
+}
+  
+.san:hover {
+    width: 314px;
+}
+
+.div {
+        padding: 1em;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        width: fit-content;
+        transition: 0.5s;
+        position: absolute;
+        top: 180px;
+}
+.div:hover {
+    box-shadow: 0 0 3px black;
+    margin-top: -10px;
+  }
+.aside1:hover ,
+.aside2:hover ,
+.aside3:hover ,
+.aside4:hover ,
+.aside5:hover {
+    margin-left: 10px;
+    color: #ef9273;
+}
+.topm1:hover ,
+.topm2:hover ,
+.topm3:hover ,
+.topm4:hover ,
+.topm5:hover {
+    margin-top: -10px;
+    color: #ef9273;
+}
+.contenerpp {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    left: 250px;
+    z-index: 100;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.darks {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    z-index: 11;
+    position: absolute;
+    top: 0px;
+    border-radius:20px ;
+    opacity: 30%;
+}
+.bigprofilepic {
+    width: 250px;
+    height: 250px;
+    background-image: url(../imgs/Untitled2.jpg);
+    background-size: 540px;
+    background-position-x: -150px;
+    /* position: absolute; */
+    /* top: 0px;
+    left: 0px; */
+    border-radius: 20px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 10;
+}
+.bigprofilepic1 {
+    width: 250px;
+    height: 250px;
+    background-image: url(../imgs/Untitled2.jpg);
+    background-size: 540px;
+    background-position-x: -150px;
+    /* position: absolute; */
+    /* top: 0px;
+    left: 0px; */
+    border-radius: 9999px;
+    padding: 0px;
+    margin: 0px;
+    Z-INDEX: 999;
+    position: absolute;
+    top: 0px;
+}
+.nameofuser {
+        color: #0d0d0d;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 18px;
+        margin: 0px;
+        padding: 0px;
+        transition: 0.3s;
+        cursor: default;
+    /* position: absolute;
+    /* left: 0px; */
+    /* text-align: center; */
+    /* top: 370; */
+}
+.detailsofuser {
+    padding: 0px;
+    margin: 0px;
+    color: #0d0d0da8;
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 3px
+}
+input[type=text] {
+    width: 220px;
+    height: 50px;
+    margin: 0px 0px -5px;
+    padding: 20px 0px 0px 0px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ef9273;
+    position: absolute;
+    background:transparent;
+    font-size: 18px;
+    /* border-radius: 5px; */
+    /* top: 250px;
+    left: 580px; */
+}
+input[type=email] {
+    width: 500px;
+    height: 50px;
+    margin: 0px 0px -5px;
+    padding: 20px 0px 0px 0px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ef9273;
+    position: absolute;
+    background:transparent;
+    font-size: 18px;
+    /* top: 250px;
+    left: 580px; */
+}
+input[type=password] {
+    width: 500px;
+    height: 50px;
+    margin: 0px 0px -5px;
+    padding: 20px 0px 0px 0px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ef9273;
+    position: absolute;
+    background:transparent;
+    font-size: 18px;
+    /* top: 250px;
+    left: 580px; */
+}
+.fnamel {
+    position: absolute;
+    top: 110px;
+    left: 860px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+.lnamel {
+    position: absolute;
+    top: 110px;
+    left: 580px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+.email {
+    position: absolute;
+    top: 235px;
+    left: 580px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+.password {
+    position: absolute;
+    top: 360px;
+    left: 580px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+#fname {
+    position: absolute;
+    top: 120px;
+    left: 860px;
+}
+#lname {
+    position: absolute;
+    top: 120px;
+    left: 580px;
+}
+#email {
+    position: absolute;
+    top: 245px;
+    left: 580px;
+}
+#password {
+    position: absolute;
+    top: 370px;
+    left: 580px;
+}
+#fname:focus, textarea:focus, select:focus{
+     outline: none;
+}
+#lname:focus, textarea:focus, select:focus{
+     outline: none;
+}
+#email:focus, textarea:focus, select:focus{
+     outline: none;
+}
+#password:focus, textarea:focus, select:focus{
+     outline: none;
+}
+  /* .form {
+      position: absolute;
+      top: 100px;
+      left: 560px;
+  } */
+  /* #lname {
+    position: absolute;
+    top: 100px;
+    left: 880px;
 } */
